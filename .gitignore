@@ -21,11 +21,11 @@
 # Ignore .sass-cache directory
 .sass-cache/
 
-# Ignore source maps
-*.css.map
+# # Ignore source maps
+# *.css.map
 
-# Ignore CSS output directory (if applicable)
-css/
+# # Ignore CSS output directory (if applicable)
+# css/
 
 # Ignore node_modules (if using Node.js)
 node_modules/
