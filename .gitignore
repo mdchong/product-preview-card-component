@@ -15,8 +15,8 @@
 .DS_Store
 .prettierignore
 
-# Ignore compiled CSS files
-*.css
+# # Ignore compiled CSS files
+# *.css
 
 # Ignore .sass-cache directory
 .sass-cache/
