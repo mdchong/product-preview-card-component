@@ -21,7 +21,7 @@ ol[role=list] {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100svh;
   line-height: 1.5;
 }
 
@@ -61,7 +61,7 @@ textarea:not([rows]) {
 }
 
 body {
-  margin: 0;
+  margin: 0 1.25rem;
   background: hsl(30, 38%, 92%);
   font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
@@ -70,14 +70,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100svh;
 }
 
 .card {
   max-width: 37.5rem;
   background: hsl(0, 0%, 100%);
-  margin: 1.5rem 1rem;
   border-radius: 16px;
+  overflow: hidden;
 }
 
 .heading-big {
@@ -100,10 +99,6 @@ body {
   width: 100%;
 }
 
-.product-image img {
-  border-radius: 16px 16px 0 0;
-}
-
 .text-container {
   display: flex;
   flex-direction: column;
@@ -122,15 +117,21 @@ body {
   width: 100%;
 }
 
-.price {
+.current-price {
   font-family: "Fraunces", serif;
   font-size: 2rem;
   font-weight: 700;
   color: hsl(158, 36%, 37%);
+  margin: 0;
+}
+
+.old-price {
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
 }
 
 .add-cart {
-  display: block;
   background-color: hsl(158, 36%, 37%);
   border: none;
   padding: 1rem 0;
@@ -160,9 +161,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-  }
-  .product-image img {
-    border-radius: 16px 0 0 16px;
   }
 }
 

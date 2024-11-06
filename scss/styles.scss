@@ -31,7 +31,7 @@ $font-weight-700: 700;
 }
 
 body {
-    margin: 0;
+    margin: 0 1.25rem;
     background: $cream;
     font-family: $font-family-1;
     font-size: $font-size-p;
@@ -40,14 +40,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100svh;
 }
 
 .card {
     max-width: 37.5rem;
     background: $white;
-    margin: 1.5rem 1rem;
     border-radius: 16px;
+    overflow: hidden;
 }
 
 .heading-big {
@@ -65,10 +64,6 @@ body {
 
 .product-image {
     width: 100%;
-}
-
-.product-image img {
-    border-radius: 16px 16px 0 0;
 }
 
 .text-container {
@@ -89,12 +84,18 @@ body {
     width: 100%;
 }
 
-.price {
+.current-price {
     @include  bigFont($dark-cyan);
+    margin: 0;
+}
+
+.old-price {
+    font-size: $font-size-p;
+    color: $dark-gray;
+    font-weight: $font-weight-500;
 }
 
 .add-cart {
-    display: block;
     background-color: $dark-cyan;
     border: none;
     padding: 1rem 0;
@@ -124,9 +125,5 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-    }
-
-    .product-image img {
-        border-radius: 16px 0 0 16px;
     }
 }
